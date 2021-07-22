@@ -1,13 +1,13 @@
 package page;
 
-import java.util.concurrent.TimeUnit;
+
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
+@test
 public class BuscaPage {
 	public ChromeDriver driver;
 
@@ -17,6 +17,8 @@ public class BuscaPage {
 		driver.findElement(By.xpath(BUSCA)).sendKeys("ecodoth alexa 4 geração"); // Localizando
 		driver.findElement(By.xpath(BUSCA)).submit();
 		
+		
+	
 	}
 	
 	/**
