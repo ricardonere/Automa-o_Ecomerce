@@ -13,6 +13,15 @@ public class BuscaPage {
 	public final String ResultadoBusca = "//span[contains(text(),'Novo Echo Dot (4ª Geração): Smart Speaker com Alex')]";
 	public final String BUSCA = "//input[@id='twotabsearchtextbox']";
 	public final String AdicionarCarrinho = "//input[@id='add-to-cart-button']";
+	public final String AlterarQuantidade = "//a[@id='hlb-view-cart-announce']";
+	public final String ClicarQuantidade = "//span[@id='a-autoid-0-announce']"; 
+	public final String SelecionarQuantidade = "//a[@id='dropdown1_2']";
+	
+	
+	
+	
+	
+	
 	public void preecheBusca() {
 		driver.findElement(By.xpath(BUSCA)).sendKeys("ecodoth alexa 4 geração"); // Localizando
 		driver.findElement(By.xpath(BUSCA)).submit();
@@ -33,6 +42,15 @@ public class BuscaPage {
 		
 		
 	
+	}
+	public void alterarQuantidade() {
+		driver.findElement(By.xpath(AlterarQuantidade)).click();
+	}
+	public void clicarQuantidade() {
+		driver.findElement(By.xpath(ClicarQuantidade)).click();
+	}
+	public void selecionarQuantidade() {
+		driver.findElement(By.xpath(SelecionarQuantidade)).click();
 	}
 	/**
 	 * Metodo Contrutor
